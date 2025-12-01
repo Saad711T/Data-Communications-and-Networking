@@ -1,0 +1,109 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}    % For mathematical symbols and equations
+\usepackage{amssymb}    % For additional math symbols
+\usepackage{geometry}   % To control page margins
+\usepackage{hyperref}   % To include hyperlinks
+\usepackage{fancyhdr}   % To customize the header and footer
+\usepackage{enumitem}   % For better lists
+\usepackage{setspace}   % For line spacing
+\usepackage{parskip}    % For better paragraph spacing
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{lipsum}
+
+
+\geometry{a4paper, margin=1in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Data communications} 
+\fancyfoot[C]{\thepage}
+
+\title{Communication System - Part2}
+\author{0xSaad / Saad Almalki}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Line Configuration}
+
+\begin{itemize}
+    \item \textbf{1-Point to Point}
+    \item \textbf{2-Multipoint}
+\end{itemize}
+
+\subsection{Point to Point}
+\includegraphics[width=0.5\textwidth]{images/point-to-point.png} \\
+dedicated link between two devices , Entire link capacity is reserved for transmission between two devices ,  It utilized in star and ring topology of computer networks.
+
+\subsection{Multipoint}
+\includegraphics[width=0.5\textwidth]{images/multipoint.png} \\
+also called multidrop , More than two specific devices share a single link , The capacity of the channel is shared between multiple devices , This type of connection is employed in the bus network topology.
+
+\section{Directions of Data Flow}
+\includegraphics[width=0.5\textwidth]{images/dataflows.png} \\
+
+\begin{itemize}
+    \item \textbf{1-Simplex} : The transmission is unidirectional - Only one station can transmit; the other can only receive - The paging systems, TV, and FM radio are examples.
+    \item \textbf{2-Half Duplex} : Each station can both transmit and receive, but not at the same time - When one station is sending, the other can only receive - The “Push-to-talk” walkie-talkies is half-duplex system.
+    \item \textbf{3-Full Duplex} : Both stations can transmit and receive at once - Signals going in either direction share the capacity of the link - One example is telephone network.
+\end{itemize}
+
+\section{Transmission Modes}
+
+\begin{itemize}
+    \item \textbf{1-Parallel}
+    \item \textbf{2-Serial}
+\end{itemize}
+
+\subsection{Parallel Transmission}
+\includegraphics[width=0.5\textwidth]{images/parallel.png} \\
+Multiple bits are sent with each clock tick.
+
+Advantages of Parallel transmission
+
+\begin{itemize}
+    \item \textbf{It is characterized by high speed of data transmission.}
+    \item \textbf{It can increase the transfer speed by a factor of n over serial transmission.}
+\end{itemize}
+
+Disadvantages of Parallel transmission
+
+\begin{itemize}
+    \item \textbf{High cost as it requires n lines just to transmit data stream.}
+    \item \textbf{It is practical only for short distances.}
+    \item \textbf{Consequently, parallel transmission is usually limited to shorter distances}
+\end{itemize}
+
+
+\subsection{Serial Transmission}
+\includegraphics[width=0.5\textwidth]{images/serial.png} \\
+One bit follows another, so it needs only one channel.
+
+Advantages of Serial transmission
+
+\begin{itemize}
+    \item \textbf{Only one channel is required; consequently, cost is reduced.}
+    \item \textbf{It has few errors and is practical for long distances.}
+\end{itemize}
+
+Disadvantages of Serial transmission
+
+\begin{itemize}
+    \item \textbf{It is slow.}
+    \item \textbf{There is a need for serial to parallel conversions.}
+    \item \textbf{Consequently, serial transmission is usually practical for long distances.}
+\end{itemize}
+
+
+\begin{flushright}
+Created by: Saad Almalki \\
+\end{flushright}
+
+\end{document}
