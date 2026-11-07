@@ -1,7 +1,7 @@
 # Data-Communications-and-Networking
 Projects for "503410-3 | Data Communication" and "503442-3 | Computer Networks" Courses in Taif University"
 
-![](../Computer-Networks/Ch1/Internet.png)
+![](https://github.com/Saad711T/Data-Communications-and-Networking/blob/main/Computer-Networks/Ch1/Internet.png?raw=true)
 
 ## Subjects
 
